@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="actividadclase.css">	
+	<meta charset="utf-8">
+	<title></title>
+</head>
+
+<body onkeypress="teclado()">
+	<div class="caja" id="caja"></div>
+	<div class="caja1" id="caja1"></div>
+
+<div class="hola" id="dd"></div>
+
+	<script>
+		y=20;
+	    x=20;
+		
+		function teclado()
+		{ 
+			console.log(event.type);
+			console.log(event.code);
+         
+			if (event.code=="KeyS") {
+            x=x+20;
+			dd.style.top=x+"px";
+			}
+		
+			if (event.code=="KeyW") {
+            x=x-20;
+			dd.style.top=x+"px";
+			}
+			
+			if (event.code=="KeyA") {
+            y=y-20;  
+			dd.style.left=y+"px";
+			}
+		
+			if (event.code=="KeyD") {
+             y=y+20;
+			dd.style.left=y+"px";
+			}
+
+	
+		
+		}
+	  
+
+	</script>
+
+
+	
+
+
+
+
+</body>
+
+</html>
